@@ -1,0 +1,30 @@
+<head>
+  <title>Makeup Testing babe</title>
+  <span style="font-family:Arial">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  <link href="{{ url_for('static',filename='css/button.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css">
+
+  <script src="{{ url_for('static',filename='js/button.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/instantsubmit.js') }}"></script>
+
+
+</head>
+
+<body>
+  <!-- <div class="topnav">
+    <img src="{{ url_for('static',filename='images/logo.png') }}">
+  </div>  -->
+  <center>
+    input form - hex code , choice (0: lips, 1: skin), image
+
+    <form method=post enctype=multipart/form-data> 
+        Hex code (Example: #fc03db): <input type="text" name="hex"><br>
+        Choice: <input type="text" name="select"><br>
+        Image file:  <input type=file name=file /><br><br>
+        <button type=submit class='large red button'>Upload</button>
+      </form>
+      <a href="{{ url_for('examples')}}"><button class='large green button'>See examples</button></a>
+
+</center>
+{% block body %}{% endblock %}
+</body>

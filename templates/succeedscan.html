@@ -1,0 +1,7 @@
+{% extends "home.html" %}
+{% block body %}
+<center> <p style="color:green"><b>Intput:</b><br></p> </center>
+<center><img src="{{ url_for('static',filename='image/input.png') }}" max-with=300></center>
+<center> <p style="color:green"><b>Output:</b><br></p> </center>
+<center><img src="{{ url_for('static',filename='image/output.png') }}" max-with=300></center>
+{% endblock %}
